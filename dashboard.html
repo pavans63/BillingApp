@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Management System - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard - Billing Management System</h1>
+
+        <!-- Form to input customer and billing details -->
+        <form id="invoice-form">
+            <h2>Generate Invoice</h2>
+
+            <label for="customer-name">Customer Name:</label>
+            <input type="text" id="customer-name" placeholder="Enter customer name" required>
+
+            <label for="customer-contact">Contact:</label>
+            <input type="text" id="customer-contact" placeholder="Enter contact details" required>
+
+            <label for="customer-location">Location:</label>
+            <input type="text" id="customer-location" placeholder="Enter customer location" required>
+
+            <label for="product-quantity">Quantity (kg):</label>
+            <input type="number" id="product-quantity" placeholder="Enter quantity" required>
+
+            <label for="product-price">Price per Unit (₹):</label>
+            <input type="number" id="product-price" placeholder="Enter price per unit" required>
+
+            <!-- Generate Invoice button -->
+            <button type="submit" id="generate-invoice-btn">Generate Invoice</button>
+        </form>
+
+        <!-- Section to display the generated invoice -->
+        <div id="invoice-output" class="invoice-display"></div>
+
+        <!-- Print Invoice button -->
+        <button id="print-btn">Print Invoice</button>
+
+        <!-- Logout Button -->
+        <button id="logout-btn">Logout</button>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
